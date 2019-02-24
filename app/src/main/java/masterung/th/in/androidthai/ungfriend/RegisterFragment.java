@@ -50,8 +50,11 @@ public class RegisterFragment extends Fragment {
 
     private void checkValue() {
 
+        MyAlert myAlert = new MyAlert(getActivity());
+
         if (aBoolean) {
 //            Non Choose Image
+            myAlert.normalDialog("Non Choose Image", "Please Choose Avata");
 
         }
 
