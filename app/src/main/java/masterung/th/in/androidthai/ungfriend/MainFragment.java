@@ -73,7 +73,8 @@ public class MainFragment extends Fragment {
                             JSONObject jsonObject = jsonArray.getJSONObject(0);
 
                             if (password.equals(jsonObject.getString("Password"))) {
-                                Toast.makeText(getActivity(), "Welcome " + jsonObject.getString("Name"), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(),
+                                        "Welcome " + jsonObject.getString("Name"), Toast.LENGTH_SHORT).show();
                             } else {
                                 myAlert.normalDialog("Password", "Password False");
                             }
